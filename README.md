@@ -9,7 +9,6 @@ Este repositório reúne meu progresso em Python desde os primeiros exercícios 
 ## 🗂️ Estrutura
 
 ```
-📁 modulo 1/
 📁 modulo 2/
  ├── bola_de_cristal.py
  ├── jogo_3_portas.py

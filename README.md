@@ -39,7 +39,7 @@ Este repositório reúne meu progresso em Python desde os primeiros exercícios 
 ├── Exercicios Extras 24-08.py
 └── Senha Aleatória.py
 ```
-> Ultima vez atualizado: 24/08/2026, 18:55
+> Ultima vez atualizado: 25/08/2026, 14:52
 
 Cada pasta `modulo X` corresponde a uma etapa do curso, contendo os exercícios e desafios propostos naquele módulo. A pasta `python pro` reúne exercícios extras, fora da grade padrão dos módulos.
 

@@ -10,33 +10,34 @@ Este repositório reúne meu progresso em Python desde os primeiros exercícios 
 
 ```
 📁 modulo 2/
- ├── bola_de_cristal.py
- ├── jogo_3_portas.py
- ├── pedra_papel_tesoura.py
- ├── prgrm_tarefa1.py
- ├── prgrm_tarefa2.py
- ├── quiz_futebol.py
- └── teste_modulo_time.py
+├── Bola de Cristal.py
+├── Jogo 3 Portas.py
+├── Pedra Papel Tesoura.py
+├── Prgrm Tarefa1.py
+├── Prgrm Tarefa2.py
+├── Quiz Futebol.py
+└── Teste Modulo Time.py
 📁 modulo 3/
- ├── Bucar_numer.py
- ├── Jogo_dos_5_segundos.py
- └── relogio.py
+├── Bucar Numero.py
+├── Jogo dos 5 Segundos.py
+└── Relogio.py
 📁 modulo 4/
- ├── gerenciador_senhas.py
- ├── historia_usando_def.py
- ├── jogo_mercador_misterioso.py
- ├── jogo_mercador_misterioso2.py
- ├── jogo_mini-time_futebol.py
- ├── planejador_de_tarefas.py
- └── programa_lista_gatos.py
+├── Gerenciador Senhas.py
+├── Historia Usando Def.py
+├── Jogo Mercador Misterioso.py
+├── Jogo Mercador Misterioso2.py
+├── Jogo Mini Time Futebol.py
+├── Planejador de Tarefas.py
+└── Programa Lista Gatos.py
 📁 modulo 5/
- ├── contador_de_numeros_impares...py
- ├── contagem_regressiva.py
- ├── prgrm_algoritimo_lineares.py
- └── soma_de_pares.py
+├── Contador de Numeros Impares e Pares.py
+├── Contagem Regressiva.py
+├── Prgrm Algoritimo Lineares.py
+└── Soma de Pares.py
 📁 python pro/
- ├── Dicionário de Palavras Modernas...py
- └── exercicios-extras-24-08.py
+├── Dicionário de Palavras Modernas.py
+├── Exercicios Extras 24-08.py
+└── Senha Aleatória.py
 ```
 > Ultima vez atualizado: 24/08/2026, 18:55
 

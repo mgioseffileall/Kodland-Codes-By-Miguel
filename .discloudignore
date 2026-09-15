@@ -1,0 +1,11 @@
+.git/
+.gitignore
+README.md
+modulo 2/
+modulo 3/
+modulo 4/
+modulo 5/
+python pro/Dicionário de Palavras Modernas.py
+python pro/Exercicios Extras 24-08.py
+python pro/Senha Aleatória.py
+__pycache__/

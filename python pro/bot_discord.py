@@ -11,7 +11,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 
-bot = commands.Bot(command_prefix='$', intents=intents)
+bot = commands.Bot(command_prefix='/', intents=intents)
 
 
 GUILD_ID = discord.Object(id=1549162712712486953)
@@ -27,19 +27,19 @@ async def on_ready():
 
 @bot.hybrid_command(name="hello", description="O bot diz oi")
 async def hello(ctx: commands.Context):
-    await ctx.send("Hello!")
+    await ctx.send("Oi! Como você está?")
 
 
 @bot.hybrid_command(name="bye", description="O bot se despede")
 async def bye(ctx: commands.Context):
-    await ctx.send("\U0001f642")
+    await ctx.send("Tchau! Até mais!" + " " + "\U0001F44B") 
 
 
 @bot.hybrid_command(name="comandos", description="Mostra a lista de comandos disponíveis")
 async def comandos(ctx: commands.Context):
     await ctx.send(
         "**Comandos disponíveis:**\n"
-        "`/hello` — o bot responde 'Hello!'\n"
+        "`/hello` — o bot responde 'Oi!'\n"
         "`/bye` — o bot responde com um emoji de tchau\n"
         "`/comandos` — mostra essa lista\n"
         "`/kick @membro [motivo]` — expulsa um membro (confirmação só sua)\n"

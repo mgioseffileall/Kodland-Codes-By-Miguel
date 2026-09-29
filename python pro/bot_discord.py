@@ -1,6 +1,7 @@
 import discord
 from bot_logic import gen_pass
 import requests
+import random
 # A variável intents armazena as permissões do bot
 import os
 from dotenv import load_dotenv
@@ -20,6 +21,8 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
     print(f'Fizemos login como {client.user}')
+
+memes = ['memes/meme1.png', 'memes/meme2.png', 'memes/meme3.png', 'memes/meme4.png']
 
 @client.event
 async def on_message(message):
@@ -43,6 +46,9 @@ async def on_message(message):
             f"Tipo(s): {', '.join(tipos)}\n"
             f"{dados['sprites']['front_default']}"
         )
+    elif message.content.startswith('$meme'):
+        escolhido = random.choice(memes)
+        await message.channel.send(file=discord.File(escolhido))
     else:
         await message.channel.send(message.content)
 

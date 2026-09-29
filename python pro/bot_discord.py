@@ -1,7 +1,12 @@
 import discord
 from bot_logic import gen_pass
+import requests
 # A variável intents armazena as permissões do bot
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 
 
@@ -24,15 +29,21 @@ async def on_message(message):
         await message.channel.send("Hello!")
     elif message.content.startswith('$bye'):
         await message.channel.send("\U0001f642")
+    elif message.content.startswith('$pokemon'):
+        partes = message.content.split(' ')
+        nome = partes[1].lower()
+        url = f'https://pokeapi.co/api/v2/pokemon/{nome}'
+        resposta = requests.get(url)
+        dados = resposta.json()
+        tipos = [t['type']['name'] for t in dados['types']]
+        await message.channel.send(
+            f"**{dados['name']}**\n"
+            f"Altura: {dados['height'] / 10} m\n"
+            f"Peso: {dados['weight'] / 10} kg\n"
+            f"Tipo(s): {', '.join(tipos)}\n"
+            f"{dados['sprites']['front_default']}"
+        )
     else:
         await message.channel.send(message.content)
 
-@bot.command()
-async def joined(ctx, member: discord.Member):
-    """Says when a member joined."""
-    await ctx.send(f'{member.name} joined {discord.utils.format_dt(member.joined_at)}')
-
-@bot.event
-async def on_ready():
-    print(f'Logged in as {bot.user} (ID: {bot.user.id})')
-    print('------')
+client.run(TOKEN)

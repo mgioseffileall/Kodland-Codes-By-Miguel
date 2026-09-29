@@ -47,7 +47,8 @@ async def on_message(message):
             f"{dados['sprites']['front_default']}"
         )
     elif message.content.startswith('$meme'):
-        escolhido = random.choice(memes)
+        pesos = [14, 9, 4, 3]
+        escolhido = random.choices(memes, weights=pesos, k=1)[0]
         await message.channel.send(file=discord.File(escolhido))
     else:
         await message.channel.send(message.content)
